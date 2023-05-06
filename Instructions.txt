@@ -1,0 +1,30 @@
+step 1:Clone the repository 
+
+step 2:Collect images dataset 
+Use jupyter notebook or python script for collecting images 4 key depedencies cv2, os(help with the file paths), time(to have break in-between collection of images) ,uuid(to name image path)
+5 signs ['hello','thanks','yes','no','iloveyou']
+Cv2.videocapture (to start capturing in webcams)
+images will be collected into their respective named folder which would later be transfered to collectedImages folder
+
+step 3:Setup LabelImg
+Clone the below repository
+LabelImg:https://github.com/heartexlabs/labelImg
+
+step 4:Label Images
+To label images we use labelImage package 
+Split into training and testing dataset
+
+step 5:Updated labelmap
+new file in annotations folder called “lab_map.pbtxt” has all the label map annotations
+
+step 6:Train the model
+Clone the below repository
+Tensorflow object detection api:https://github.com/tensorflow/models/tree/master/research/object_detection
+Train steps =20,000 , loss=0.099
+
+step 7:Update checkpoint
+
+step 8:Detect
+final testing of the model
+
+
